@@ -1,0 +1,11 @@
+:root {
+    --animation-speed: 0.5s;
+    --navbar-height: 75px;
+    --scroll-pos: 0;
+}
+
+@media (prefers-reduced-motion) {
+    :root {
+        --animation-speed: 0.2s;
+    }
+}

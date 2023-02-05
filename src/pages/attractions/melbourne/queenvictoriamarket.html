@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="../../../../"> <!--! Add target="_blank" for open in new tab !-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta content="Victoria" property="og:title">
+    <meta content="This is a CS project, by Tyrcnex.&#10;&#10;Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!" property="og:description">
+    <meta content="https://tyrcnex.github.io/CSWeb" property="og:url">
+    <meta content="images/victoriaMap.png" property="og:image">
+    <meta content="#00c455" data-react-helmet="true" property="theme-color">
+
+    <title>Victoria - Australia's Adventure-Packed State</title>
+	<meta name="description" content="Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!">
+    <link rel="stylesheet" href="src/css/all.css" type="text/css">
+    <link rel="icon" href="images/victoria.png" type="image/icon">
+</head>
+<body>
+    <script src="src/js/genericReferences.js"></script>
+    <script src="src/js/debug.js"></script>
+    <script id="navBarPlaceholder" src="src/js/htmlPlaceholders/navBar.js"></script>
+    <script id="loadPlaceholder" src="src/js/htmlPlaceholders/load.js"></script>
+
+    <div class="header">
+        <div class="header-main">
+            <video class="headerVideo" preload="true" autoplay loop muted>
+                <source src="videos/mainheader.mov" type="video/mp4" />
+            </video>
+            <p class="title">Queen Victoria Market</p>
+        </div>
+    </div>
+
+    <div style="height: 70px"></div>
+
+    <div class="contentBox two-column-grid centerVert">
+        <div class="contentBoxGrid">
+            <iframe src="https://www.youtube.com/embed/EipzCIDfCYw" width="800" height="400"></iframe>
+        </div>
+        <div class="contentBoxGrid">
+            <p class="header2" style="margin: 40px;">Queen Victoria Market is Melbourne's iconic Market which has been operating since 1878. Discover a wide variety of fresh, quality produce, hand-made and unique products, great coffee and food, souvenirs and clothing!</p>
+        </div>
+    </div>
+
+    <div class="contentBox">
+        <div>
+            <p class="headerBig centerHor strongFont"><a href="https://www.otwayfly.com.au/tickets-activities/tickets/treetop-walks/">Buy tickets</a></p>
+            <div style="height: 30px"></div>
+            <p class="header2 centerHor strongFont">Payment:</p>
+            <div class="n-column-grid">
+                <p>1 Adult Ticket<br><br><span class="p2 strongFont">AUD 27.5</span></p>
+                <p>1 Child Ticket (4-15 yrs)<br><br><span class="p2 strongFont">AUD 21.5</span></p>
+                <p>1 Family Ticket (2 Adults 2 Children)<br><br><span class="p2 strongFont">AUD 80</span></p>
+                <p>1 Senior Ticket<br><br><span class="p2 strongFont">AUD 22.5</span></p>
+                <p>1 Infant Ticket (below 2 yrs)<br><br><span class="p2 strongFont">Free</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentBox restaurantBox">
+        <p class="header2">Restaurants nearby:</p>
+        <div class="n-column-grid">
+            <div class="restaurantContent">
+                <div style="height:20px"></div>
+                <p class="explore-header">Otway Nourished</p>
+                <p>A perfect mixture of historical display and local food.</p>
+                <p><a href="https://www.tripadvisor.com/Restaurant_Review-g2686936-d4079309-Reviews-Otway_Nourished-Ferguson_Victoria.html">See more ➪</a></p>
+            </div>
+            <div class="restaurantContent">
+                <div style="height:20px"></div>
+                <p class="explore-header">The Perch</p>
+                <p>Fresh seafood and friendly service, you must try this restaurant!</p>
+                <p><a href="https://www.tripadvisor.com/Restaurant_Review-g3734403-d2618126-Reviews-Hueys_At_Blueys_Pizzeria_and_Bar-Blueys_Beach_Pacific_Palms_New_South_Wales.html">See more ➪</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentBox n-column-grid centerVert">
+        <p class="header1 strongFont">See what others think!</p>
+        <iframe src="https://www.tripadvisor.com/ShowUserReviews-g13352592-d482078-r458488050-Otway_Fly_Treetop_Adventures-Weeaproinah_Victoria.html" class="reviews"></iframe>
+    </div>
+
+    <script src="src/js/scripts/loadScreen.js"></script>
+    <script src="src/js/scripts/loadNavbar.js"></script>
+</body>
+</html>

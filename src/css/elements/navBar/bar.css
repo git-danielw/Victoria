@@ -1,0 +1,79 @@
+@import url('../../presets.css');
+
+/* Main navigation bar container */
+#navBar {
+    width: 120vw;
+    height: calc(var(--navbar-height)*max(1,min(2 - calc(var(--scroll-pos)/10),1.6)));
+    position: fixed;
+    display: flex;
+    top: -2px;
+    background-color: rgb(255,255,255,min(calc(var(--scroll-pos)/10 - 2),1));
+    z-index: 100;
+    box-shadow: 0 0px min(calc(var(--scroll-pos))/10*1px - 2 *1px,10*1px) 0 rgba(0,0,0, 1);
+    border: min(calc((var(--scroll-pos)*1px - 20000px)/30),1px) solid black;
+    transform: translateX(-10px);
+    overflow-x: auto;
+    padding: 0px 200px 0px 0px;
+    transition: var(--animation-speed);
+}
+
+/* Sub containers (words) */
+
+.item {
+    display: inline-block;
+    position: relative;
+    margin: 0px 0px 0px 50px;
+    font-size: min(30px, 4vw);
+    font-family: "Unfiltered Worn Large";
+    cursor: pointer;
+    top: 50%;
+    transform: translate(0%, -50%);
+    height: 80%;
+}
+
+.item:hover, .item.buttonActivate {
+    background: rgb(240, 240, 240, max(0.2,min(calc(var(--scroll-pos)/10),0.8)));
+    box-shadow: 0 0px 8px 0 rgba(0,0,0, 0.1);
+}
+
+.item p {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -47%);
+    padding: 30px;
+    margin: 0px;
+    user-select: none;
+    color: rgb(calc(1000 * min(calc(2 - var(--scroll-pos)/10),1)),calc(1000 * min(calc(2 - var(--scroll-pos)/10),1)),calc(1000 * min(calc(2 - var(--scroll-pos)/10),1)));
+    transition: var(--animation-speed);
+}
+
+.item.buttonActivate {
+    background: rgb(220,220,220, max(0.5,min(calc(var(--scroll-pos)/10),1)));
+    box-shadow: 0 0px 5px 0 rgba(0,0,0, 0.3);
+}
+
+/* Sub containers (Victoria home button) */
+
+#victoriaHome {
+    position: relative;
+    top: 50%;
+    left: 30px;
+    height: calc(var(--navbar-height) * 0.8);
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    padding-right: 20px;
+    filter: brightness(calc(20 * min(calc(2 - var(--scroll-pos)/10),1)));
+}
+
+#victoriaHomeImg {
+    height: 100%;
+    width: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#navBarNudge {
+    height: var(--navbar-height);
+}

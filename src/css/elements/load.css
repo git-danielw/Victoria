@@ -1,0 +1,30 @@
+@import url('../presets.css');
+
+#load {
+    /* Set the dimensions, color, and other display elements */
+    height: 200vh;
+    width: 200vw;
+    background: #fff;
+    opacity: 1;
+    z-index: 10000000000;
+
+    /* Center the whole loading screen on page */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Center all children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Same position on page, doesn't affect any elements that aren't fixed */
+    position: fixed;    
+}
+
+/* Hide the loading screen (handled with JS) */
+#load.hide {
+    transition: var(--animation-speed);
+    opacity: 0;
+    height: 0vh; /* This is for making the loading screen "disappear", as in "non-interactable". */
+}

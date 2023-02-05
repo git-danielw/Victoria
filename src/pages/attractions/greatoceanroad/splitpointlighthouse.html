@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="../../../../"> <!--! Add target="_blank" for open in new tab !-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta content="Victoria" property="og:title">
+    <meta content="This is a CS project, by Tyrcnex.&#10;&#10;Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!" property="og:description">
+    <meta content="https://tyrcnex.github.io/CSWeb" property="og:url">
+    <meta content="images/victoriaMap.png" property="og:image">
+    <meta content="#00c455" data-react-helmet="true" property="theme-color">
+
+    <title>Victoria - Australia's Adventure-Packed State</title>
+	<meta name="description" content="Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!">
+    <link rel="stylesheet" href="src/css/all.css" type="text/css">
+    <link rel="icon" href="images/victoria.png" type="image/icon">
+</head>
+<body>
+    <script src="src/js/genericReferences.js"></script>
+    <script src="src/js/debug.js"></script>
+    <script id="navBarPlaceholder" src="src/js/htmlPlaceholders/navBar.js"></script>
+    <script id="loadPlaceholder" src="src/js/htmlPlaceholders/load.js"></script>
+
+    <div class="header">
+        <div class="header-main">
+            <video class="headerVideo" preload="true" autoplay loop muted>
+                <source src="videos/mainheader.mov" type="video/mp4" />
+            </video>
+            <p class="title">Split Point Lighthouse</p>
+        </div>
+    </div>
+
+    <div style="height: 70px"></div>
+
+    <div class="contentBox two-column-grid centerVert">
+        <div class="contentBoxGrid">
+            <iframe src="https://www.youtube.com/embed/0zlD3EBHokM" width="800" height="400"></iframe>
+        </div>
+        <div class="contentBoxGrid">
+            <p class="header2" style="margin: 40px">Climb this magnificent lighthouse and admire the views from atop.</p>
+        </div>
+    </div>
+
+    <div class="contentBox restaurantBox">
+        <p class="header2">Restaurants nearby:</p>
+        <div class="n-column-grid">
+            <div class="restaurantContent">
+                <div style="height:20px"></div>
+                <p class="explore-header">The Lighthouse Tea Rooms</p>
+                <p>A beautiful cafe with delicious offerings.</p>
+                <p><a href="https://www.tripadvisor.com.au/Restaurant_Review-g552127-d4283237-Reviews-The_Lighthouse_Tea_Rooms-Aireys_Inlet_Victoria.html">See more ➪</a></p>
+            </div>
+            <div class="restaurantContent">
+                <div style="height:20px"></div>
+                <p class="explore-header">The Captain of Aireys Inlet</p>
+                <p>Delicious pizza and fresh salad awaits you!</p>
+                <p><a href="https://www.tripadvisor.com.au/Restaurant_Review-g552127-d7937273-Reviews-The_Captain_Of_Aireys_Inlet-Aireys_Inlet_Victoria.html">See more ➪</a></p>
+            </div>
+            <div class="restaurantContent">
+                <div style="height:20px"></div>
+                <p class="explore-header">A la Grecque</p>
+                <p>Fancy dining in a beautiful area.</p>
+                <p><a href="https://www.tripadvisor.com.au/Restaurant_Review-g552127-d738198-Reviews-A_la_Grecque-Aireys_Inlet_Victoria.html">See more ➪</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentBox n-column-grid centerVert">
+        <p class="header1 strongFont">See what others think!</p>
+        <iframe src="https://www.tripadvisor.com/Attraction_Review-g552127-d4431304-Reviews-Split_Point_Lighthouse-Aireys_Inlet_Victoria.html" class="reviews"></iframe>
+    </div>
+
+    <script src="src/js/scripts/loadScreen.js"></script>
+    <script src="src/js/scripts/loadNavbar.js"></script>
+</body>
+</html>

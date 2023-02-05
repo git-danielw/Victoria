@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="../../../../"> <!--! Add target="_blank" for open in new tab !-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta content="Victoria" property="og:title">
+    <meta content="This is a CS project, by Tyrcnex.&#10;&#10;Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!" property="og:description">
+    <meta content="https://tyrcnex.github.io/CSWeb" property="og:url">
+    <meta content="images/victoriaMap.png" property="og:image">
+    <meta content="#00c455" data-react-helmet="true" property="theme-color">
+
+    <title>Victoria - Australia's Adventure-Packed State</title>
+	<meta name="description" content="Learn about Victoria, jam-packed with diverse regions and attractions. Adventure awaits you!">
+    <link rel="stylesheet" href="src/css/all.css" type="text/css">
+    <link rel="icon" href="images/victoria.png" type="image/icon">
+</head>
+<body>
+    <script src="src/js/genericReferences.js"></script>
+    <script src="src/js/debug.js"></script>
+    <script id="navBarPlaceholder" src="src/js/htmlPlaceholders/navBar.js"></script>
+    <script id="loadPlaceholder" src="src/js/htmlPlaceholders/load.js"></script>
+
+    <div class="header" style="height: 70vh">
+        <div class="header-main">
+            <video class="headerVideo" preload="true" autoplay loop muted>
+                <source src="videos/mainheader.mov" type="video/mp4" />
+            </video>
+            <p class="title">Penguin Parade</p>
+        </div>
+    </div>
+
+    <div style="height: 70px"></div>
+
+    <div class="contentBox two-column-grid centerVert">
+        <div class="contentBoxGrid">
+            <p class="header2" style="margin: 40px">Home to the largest Little Penguin colony in the world, enjoy watching these adorable seabirds waddle home from the ocean to their burrows.</p>
+        </div>
+        <div class="contentBoxGrid">
+            <iframe src="https://www.youtube.com/embed/MchECDmC8EY" width="800" height="400"></iframe>
+        </div>
+    </div>
+
+    <div class="contentBox">
+        <div>
+            <p class="headerBig centerHor strongFont"><a href="https://www.penguins.org.au/buy-tickets/category/id/2">Buy tickets</a></p>
+            <div style="height: 30px"></div>
+            <p class="header2 centerHor strongFont">Payment:</p>
+            <div class="n-column-grid">
+                <p>1 Adult Ticket<br><br><span class="p2 strongFont">AUD 27.70</span></p>
+                <p>1 Child Ticket (4-15 yrs)<br><br><span class="p2 strongFont">AUD 13.70</span></p>
+                <p>1 Australian Pension Card Ticket<br><br><span class="p2 strongFont">AUD 19.3</span></p>
+                <p>1 Family Ticket (2 Adults 2 Children)<br><br><span class="p2 strongFont">AUD 69.1</span></p>
+                <p>1 Infant Ticket (below 4 yrs)<br><br><span class="p2 strongFont">Free</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentBox restaurantBox">
+        <p class="header2">Restaurants nearby:</p>
+        <div class="n-column-grid">
+            <div class="restaurantContent">
+                <div style="height:20px"></div>
+                <p class="explore-header">Omaru</p>
+                <p>Delicious curries await you!</p>
+                <p><a href="https://www.tripadvisor.com.au/Restaurant_Review-g2510500-d23220330-Reviews-Omaru-Ventnor_Phillip_Island_Victoria.html">See more ➪</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentBox 2-column-grid centerVert">
+        <p class="header1 strongFont">See what others think!</p>
+        <iframe src="https://www.tripadvisor.com.au/Attraction_Review-g6694217-d544747-Reviews-Phillip_Island_Nature_Parks_Penguin_Parade-Summerlands_Phillip_Island_Victoria.html" class="reviews"></iframe>
+    </div>
+
+    <script src="src/js/scripts/loadScreen.js"></script>
+    <script src="src/js/scripts/loadNavbar.js"></script>
+</body>
+</html>
